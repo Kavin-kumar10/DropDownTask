@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/DropDownTask/static/css/main.fffb0fe6.css",
+    "main.js": "/DropDownTask/static/js/main.e74930e3.js",
+    "index.html": "/DropDownTask/index.html",
+    "main.fffb0fe6.css.map": "/DropDownTask/static/css/main.fffb0fe6.css.map",
+    "main.e74930e3.js.map": "/DropDownTask/static/js/main.e74930e3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fffb0fe6.css",
+    "static/js/main.e74930e3.js"
+  ]
+}
