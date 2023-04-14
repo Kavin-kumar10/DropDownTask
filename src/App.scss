@@ -29,7 +29,7 @@
       font-size: 40px
     }
     .Drawer{
-      @include myFlex;
+      // @include myFlex;
       width: 100%;
       max-width: 400px;
       flex-direction: column;
@@ -52,8 +52,11 @@
         }
       }
       &__content{
-        width: 100%;
+        width: 400px;
         margin: 5px;
+        position: absolute;
+        background-color:white;
+        z-index: 1;
       }
       &__item{
         height: 50px;

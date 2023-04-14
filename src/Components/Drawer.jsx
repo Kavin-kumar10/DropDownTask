@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import {RiArrowDropDownLine} from 'react-icons/ri'
+import {RiArrowDropDownLine,RiArrowDropUpLine} from 'react-icons/ri';
 
 
 const Drawer = ({State,setState,items,error,setError})=>{
@@ -9,7 +9,10 @@ const Drawer = ({State,setState,items,error,setError})=>{
       <div className="Drawer">
       <div className="Drawer__btn" onClick={()=>setActive(!active)}>
         <h3>{State}</h3>
-        <RiArrowDropDownLine color='black' size={40}/>
+        {(active)
+        ?<RiArrowDropUpLine color='black' size={40}/>
+        :<RiArrowDropDownLine color='black' size={40}/>
+        }
       </div>
       {
         (active)?
