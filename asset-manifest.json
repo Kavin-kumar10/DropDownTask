@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/DropDownTask/static/css/main.62aa1acf.css",
-    "main.js": "/DropDownTask/static/js/main.b82a171a.js",
+    "main.css": "/DropDownTask/static/css/main.15ad5202.css",
+    "main.js": "/DropDownTask/static/js/main.230c22f4.js",
     "index.html": "/DropDownTask/index.html",
-    "main.62aa1acf.css.map": "/DropDownTask/static/css/main.62aa1acf.css.map",
-    "main.b82a171a.js.map": "/DropDownTask/static/js/main.b82a171a.js.map"
+    "main.15ad5202.css.map": "/DropDownTask/static/css/main.15ad5202.css.map",
+    "main.230c22f4.js.map": "/DropDownTask/static/js/main.230c22f4.js.map"
   },
   "entrypoints": [
-    "static/css/main.62aa1acf.css",
-    "static/js/main.b82a171a.js"
+    "static/css/main.15ad5202.css",
+    "static/js/main.230c22f4.js"
   ]
 }
