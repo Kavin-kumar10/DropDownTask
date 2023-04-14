@@ -1,12 +1,16 @@
-import React,{useState} from "react";
+import React,{useRef,useEffect,useState} from "react";
 import {RiArrowDropDownLine,RiArrowDropUpLine} from 'react-icons/ri';
 
 
 const Drawer = ({State,setState,items,error,setError})=>{
+  const [active,setActive] = useState(false);
     console.log(items);
-    const [active,setActive] = useState(false);
+    const wrapperRef = useRef(null);
+    useOutsideAlerter(wrapperRef);
+  
     return(
-      <div className="Drawer">
+      
+      <div className="Drawer"  ref={wrapperRef}>
       <div className="Drawer__btn" onClick={()=>setActive(!active)}>
         <h3>{State}</h3>
         {(active)
@@ -33,6 +37,19 @@ const Drawer = ({State,setState,items,error,setError})=>{
       }
     </div>
     )
+    function useOutsideAlerter(ref) {
+      useEffect(() => {
+        function handleClickOutside(event) {
+          if (ref.current && !ref.current.contains(event.target)) {
+            setActive(false);
+          }
+        }
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+          document.removeEventListener("mousedown", handleClickOutside);
+        };
+      }, [ref]);
+    }
   }
   
 
