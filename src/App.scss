@@ -16,18 +16,22 @@
   @include myFlex;
   .Container{
     height:500px;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     border-radius: 12px;
+    padding: 20px;
     border: 1px solid grey;
     @include myFlex;
     flex-direction: column;
+    margin: 12px;
     h1{
       margin: 20px;
       font-size: 40px
     }
     .Drawer{
       @include myFlex;
-      width: 400px;
+      width: 100%;
+      max-width: 400px;
       flex-direction: column;
       margin: 12px;
       &__btn{
@@ -66,8 +70,9 @@
     button{
       margin: 12px;
       height: 50px;
-      width: 200px;
+      max-width: 200px;
       font-size: 20px;
+      padding: 0px 60px;
       border: none;
       outline: none;
       border-radius: 5px;
