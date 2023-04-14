@@ -17,6 +17,7 @@ function App() {
     return item.Country
   })
   useEffect(()=>{
+    setState('Select State');
     if(country != 'Select Country')
     setListState(datas.filter((item)=>item.Country === country)[0].place);  
   },[country])
